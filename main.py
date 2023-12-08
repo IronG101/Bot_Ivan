@@ -10,7 +10,7 @@ from aiogram.types import (KeyboardButton, Message, ReplyKeyboardMarkup, ReplyKe
 from aiogram.enums import ParseMode
 
 ##################################################################################################
-API_TOKEN = '5587455597:AAETESl92cqEM_XkZ5h9AXXPt_6myvFnWz4'
+API_TOKEN = '_______API_TOKEN__________'
 
 # Текст сообщений
 text_1 = "text-1"
