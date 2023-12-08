@@ -79,7 +79,9 @@ async def start_text(message: Message, state: FSMContext):
 async def go_to_video_1(message: Message, state: FSMContext):
     logging.info(message.text)
     await state.set_state(Form.block_3)
-    await message.answer_video(video=video_2, reply_markup=ReplyKeyboardMarkup(
+    await message.answer_video(video=video_2)
+    await asyncio.sleep(delay_2)
+    await message.answer(text=text_3, reply_markup=ReplyKeyboardMarkup(
         keyboard=[[KeyboardButton(text=button_3_1), KeyboardButton(text=button_3_2)]],
         resize_keyboard=True))
 
