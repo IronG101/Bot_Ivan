@@ -11,7 +11,7 @@ from aiogram.types import (KeyboardButton, Message, ReplyKeyboardMarkup, ReplyKe
 from aiogram.enums import ParseMode
 
 ##################################################################################################
-API_TOKEN = "________API__________"
+API_TOKEN = "_________#################____________________"
 
 # Текст сообщений
 text_1 = "text-1"
@@ -202,5 +202,6 @@ async def main():
 
 
 if __name__ == "__main__":
+    # print(os.environ.get('API_TOKEN'))
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     asyncio.run(main())
