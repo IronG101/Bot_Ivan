@@ -1,5 +1,6 @@
 import sys
 import os
+from dotenv import load_dotenv
 import asyncio
 import logging
 from aiogram import Bot, Dispatcher, F
@@ -11,7 +12,8 @@ from aiogram.types import (KeyboardButton, Message, ReplyKeyboardMarkup, ReplyKe
 from aiogram.enums import ParseMode
 
 ##################################################################################################
-API_TOKEN = "_________#################____________________"
+load_dotenv()
+API_TOKEN = os.getenv("API_TOKEN") # токен храним в файле .env см. README
 
 # Текст сообщений
 text_1 = "text-1"
