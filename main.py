@@ -202,6 +202,5 @@ async def main():
 
 
 if __name__ == "__main__":
-    # print(os.environ.get('API_TOKEN'))
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     asyncio.run(main())
